@@ -1,0 +1,35 @@
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #23d366;
+  color: #FFF;
+  font-size: 30px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.link-target::before {
+  display: block;
+  content: "";
+  /*margin-top: -85px;*/
+  height: 85px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 81px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
