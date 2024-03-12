@@ -55,19 +55,45 @@
         <div class="container py-5">
             <div class="row flex-column-reverse flex-lg-row my-5">
                 <div class="col-md-6">
-                    <form>
-                        <h1 class="text-center h5">Solicita acá tu crédito llenando los siguientes espacios</h1>
-                        <div class="mb-3"><label class="form-label" for="name">Nombre</label><input class="form-control" type="text" name="name"></div>
-                        <div class="mb-3"><label class="form-label" for="name">Teléfono</label><input class="form-control" type="text" name="name"></div>
-                        <div class="mb-3"><label class="form-label" for="name">Email</label><input class="form-control" type="text" name="name"></div>
-                        <div class="mb-3"><label class="form-label" for="name">Nombre de la empresa</label><input class="form-control" type="text" name="name"></div>
-                        <div class="mb-3"><label class="form-label" for="name">DPI de Representante legal de la empresa</label><input class="form-control" type="text" name="name"></div>
-                        <div class="mb-3"><label class="form-label" for="name">NIT</label><input class="form-control" type="text" name="name"></div>
-                        <div class="mb-3">
-                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Autorizo a YUYU investigar sobre mi información crediticia y bancaria</label></div>
-                        </div>
-                        <div class="text-center mb-5"><button class="btn btn-light btn-lg border rounded-pill border-warning" type="button" style="color: #026841;">Precalifica tu crédito</button></div>
-                    </form>
+<form
+  action="https://formspree.io/f/xnqezopr"
+  method="POST"
+>
+    <h1 class="text-center h5">Solicita acá tu crédito llenando los siguientes espacios</h1>
+    <div class="mb-3">
+        <label class="form-label" for="nombre">Nombre</label>
+        <input name="nombre" class="form-control" type="text" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="telefono">Teléfono</label>
+        <input name="telefono"class="form-control" type="tel" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="correo">Email</label>
+        <input name="correo" class="form-control" type="email" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="empresa">Nombre de la empresa</label>
+        <input name="empresa" class="form-control" type="text" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="DPI">DPI de Representante legal de la empresa</label>
+        <input name="DPI" class="form-control" type="number" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="NIT">NIT</label>
+        <input name="NIT" class="form-control" type="text" required>
+    </div>
+    <div class="mb-3">
+        <div class="form-check">
+            <input name="autorización" class="form-check-input" type="checkbox" id="formCheck-1" required>
+            <label class="form-check-label" for="formCheck-1">Autorizo a YUYU investigar sobre mi información crediticia y bancaria</label>
+        </div>
+    </div>
+    <div class="text-center mb-5">
+        <button class="btn btn-light btn-lg border rounded-pill" type="submit" style="color: #026841;">Precalifica tu crédito</button>
+    </div>
+</form>
                 </div>
                 <div class="col-md-6">
                     <p class="text-center d-lg-flex fs-1">¿Qué esperas para solicitar tu crédito ahora mismo?</p>
